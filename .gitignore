@@ -1,0 +1,21 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+.DS_Store
+.vite/
+
+# Private working notes — outstanding questions about the résumé content.
+# Not for a public repo. Delete it once it's resolved.
+INTAKE.md
+
+# Never commit these. The 履歴書 carries a street address, postal code, and
+# photo; the English résumé carries a phone number and prefecture.
+*.pdf
+public/*.pdf
+
+# Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
