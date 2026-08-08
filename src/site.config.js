@@ -5,5 +5,4 @@
  */
 export const SOCIALS = [
   { label: 'Email', href: 'mailto:abe.akio97@gmail.com', handle: 'abe.akio97@gmail.com' },
-  { label: 'GitHub', href: 'https://github.com/deceir', handle: '@deceir' },
 ]
