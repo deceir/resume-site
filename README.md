@@ -146,8 +146,3 @@ a proper preview image, drop a 1200×630 PNG at `public/og.png` and add:
 
 ## Accessibility notes
 
-- Skip link, focus-visible rings, and `aria-pressed` on both toggles.
-- The language switch shows both labels at all times, so a reader who only
-  knows one of the two can still find their way back.
-- Everything animated is behind `prefers-reduced-motion`. The typewriter
-  renders its first word statically and reveals show immediately.
