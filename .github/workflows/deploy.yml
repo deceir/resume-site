@@ -17,14 +17,22 @@ permissions:
   pages: write
   id-token: write
 
-# Let a running deploy finish rather than cancelling it half-published.
+# One deployment at a time, but a new push wins.
+#
+# The official Pages starter uses cancel-in-progress: false so production
+# deploys always finish. That deadlocks: if a run wedges (GitHub can create
+# the deployment and then never transition it out of "waiting"), every later
+# push queues behind it indefinitely and the only way out is cancelling by
+# hand in the Actions tab. For a static résumé site a superseded deploy is
+# worth nothing, so let the newest push cancel whatever is pending.
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -45,6 +53,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    # Default is 360 minutes. A wedged deploy would hang for six hours
+    # looking like it was still working; fail loudly in ten instead.
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
