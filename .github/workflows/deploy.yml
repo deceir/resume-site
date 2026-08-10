@@ -1,6 +1,6 @@
 ## Builds the site and publishes dist/ to GitHub Pages.
 ##
-## Pages cannot build a Vite app on its own — pointing it at a branch just
+## Pages cannot build a Vite app on its own. Pointing it at a branch just
 ## serves the raw source, which means the browser gets src/main.jsx as
 ## text/jsx and nothing renders. This workflow runs the build first.
 ##

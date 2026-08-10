@@ -5,8 +5,12 @@
  * The Japanese tree is written toward 職務経歴書 conventions: です・ます
  * for prose, 体言止め for bullets, factual over conversational.
  *
- * The `en` and `ja` trees are the same shape — if you add a field to one,
+ * The `en` and `ja` trees are the same shape. If you add a field to one,
  * add it to the other or the UI renders blank.
+ *
+ * House style: no em dashes anywhere in the copy. Use commas, colons, or
+ * a full stop instead. Date ranges use an en dash in English and 〜 in
+ * Japanese.
  *
  * This file is public: the repo is public and every string here also ships
  * inside the JavaScript bundle. Nothing goes in that you would not put on
@@ -23,7 +27,7 @@ export const content = {
    * ================================================================= */
   en: {
     meta: {
-      title: 'Akio Abe — Software Engineer',
+      title: 'Akio Abe | Software Engineer',
       description:
         'Backend and full-stack software engineer. Java, Spring Boot, REST APIs, and cloud infrastructure. Based in Kyushu, Japan.',
     },
@@ -43,11 +47,11 @@ export const content = {
 
     hero: {
       status: 'Open to remote roles',
-      greeting: 'Hello — I’m',
+      greeting: 'Hello, I’m',
       name: 'Akio Abe',
       roles: ['Software Engineer', 'Backend Developer', 'Full-Stack Engineer'],
       tagline:
-        'I build backend software — Java and Spring Boot services, REST APIs, and the database and cloud layers underneath them. Three years of it, for U.S. federal programs and business operations.',
+        'I build backend software. Java and Spring Boot services, REST APIs, and the database and cloud layers underneath them. Three years of it, for U.S. federal programs and business operations.',
       location: 'Kyushu, Japan · Remote',
       ctaPrimary: 'See the work',
       ctaSecondary: 'Get in touch',
@@ -62,25 +66,25 @@ export const content = {
     ],
 
     about: {
-      kicker: '01 — About',
+      kicker: '01 · About',
       title: 'Backend engineer. Java, Spring Boot, and the layers underneath.',
       paragraphs: [
-        'I write backend software: Spring Boot services, REST APIs, and the database and cloud infrastructure they sit on. Three years of it — first as a consultant at CGI building full-stack systems for business operations, then at Accenture Federal Services on enterprise applications for U.S. federal government customers.',
+        'I write backend software: Spring Boot services, REST APIs, and the database and cloud infrastructure they sit on. Three years of it, first as a consultant at CGI building full-stack systems for business operations, then at Accenture Federal Services on enterprise applications for U.S. federal government customers.',
         'Before software I served three years as an infantryman in the U.S. Army. It taught me to be accountable for work other people depend on, and to keep a level head when a deadline does not move.',
         'I am now based in Kyushu, finishing a B.S. in Software Engineering at Western Governors University and continuing into an M.S. with an AI engineering focus. I passed JLPT N3 in December 2025 and am still working on my Japanese.',
-        'Alongside that I am building practical experience with AI coding agents — learning where they genuinely speed up delivery and where they don’t — and working them into my day-to-day process.',
+        'Alongside that I am building practical experience with AI coding agents. I am learning where they genuinely speed up delivery and where they don’t, and working them into my day-to-day process.',
       ],
       facts: [
         { k: 'Based in', v: 'Kyushu, Japan' },
         { k: 'Focus', v: 'Backend · REST APIs · Full-stack' },
         { k: 'Languages', v: 'English (native) · Japanese (JLPT N3)' },
-        { k: 'Building', v: 'Diplomatia — diplomatia.net' },
+        { k: 'Building', v: 'Diplomatia (diplomatia.net)' },
         { k: 'Currently', v: 'B.S. Software Engineering, WGU' },
       ],
     },
 
     skills: {
-      kicker: '02 — Stack',
+      kicker: '02 · Stack',
       title: 'What I work in',
       note: 'Grouped by layer. Everything here is something I have shipped with, not something I have read about.',
       groups: [
@@ -141,14 +145,14 @@ export const content = {
     },
 
     experience: {
-      kicker: '03 — Experience',
+      kicker: '03 · Experience',
       title: 'Where the hours went',
       current: 'Present',
       roles: [
         {
           company: 'Accenture Federal Services',
           role: 'Software Engineer, Sr. Analyst',
-          period: 'Oct 2023 — Aug 2024',
+          period: 'Oct 2023 – Aug 2024',
           location: 'San Antonio, TX, USA',
           current: false,
           summary:
@@ -164,11 +168,11 @@ export const content = {
         {
           company: 'CGI Inc.',
           role: 'Consultant, Software Developer',
-          period: 'Mar 2022 — Oct 2023',
+          period: 'Mar 2022 – Oct 2023',
           location: 'Belton, TX, USA',
           current: false,
           summary:
-            'Full-stack delivery for business operations — requirements through production support.',
+            'Full-stack delivery for business operations, from requirements through production support.',
           points: [
             'Designed and implemented full-stack software solutions using Java, Spring Boot, SQL, and modern web technologies.',
             'Developed database-driven application features and integrations supporting business operations.',
@@ -180,7 +184,7 @@ export const content = {
         {
           company: 'United States Army',
           role: 'Infantryman',
-          period: 'Aug 2015 — Apr 2018',
+          period: 'Aug 2015 – Apr 2018',
           location: 'Fort Drum, NY, USA',
           current: false,
           summary:
@@ -195,7 +199,7 @@ export const content = {
     },
 
     projects: {
-      kicker: '04 — Work',
+      kicker: '04 · Work',
       title: 'Selected projects',
       note: 'Things built outside of client work.',
       filters: { all: 'All', game: 'Games', software: 'Software' },
@@ -207,9 +211,9 @@ export const content = {
           kind: 'game',
           title: 'Diplomatia',
           year: '2026',
-          status: 'Live — in active development',
+          status: 'Live, in active development',
           blurb:
-            'A persistent geopolitical strategy game in the browser. Players found a nation, develop provinces, run trade convoys that take real time to arrive, and negotiate alliances — or raid and go to war once their new-player protection lapses.',
+            'A persistent geopolitical strategy game in the browser. Players found a nation, develop provinces, run trade convoys that take real time to arrive, and negotiate alliances, or raid and go to war once their new-player protection lapses.',
           tags: ['Go', 'React', 'MySQL', 'Game systems'],
           role: 'Solo developer',
           href: 'https://diplomatia.net',
@@ -230,30 +234,30 @@ export const content = {
     },
 
     education: {
-      kicker: '05 — Education',
+      kicker: '05 · Education',
       title: 'Education & credentials',
       items: [
         {
           school: 'Western Governors University',
-          award: 'M.S. Software Engineering — AI Engineering',
-          period: 'Nov 2026 — Apr 2027 (expected)',
+          award: 'M.S. Software Engineering, AI Engineering',
+          period: 'Nov 2026 – Apr 2027 (expected)',
           detail: 'Graduate study with a specialization in AI engineering.',
         },
         {
           school: 'Western Governors University',
           award: 'B.S. Software Engineering',
-          period: 'May 2026 — Oct 2026 (expected)',
+          period: 'May 2026 – Oct 2026 (expected)',
           detail: 'Competency-based undergraduate degree in software engineering.',
         },
         {
           school: 'Ritsumeikan Asia Pacific University',
           award: 'International Relations',
-          period: 'Oct 2024 — Mar 2026',
+          period: 'Oct 2024 – Mar 2026',
           detail: 'Withdrew before completion.',
         },
         {
           school: 'Western Governors University',
-          award: 'Excellence Award — Back-End Programming',
+          award: 'Back-End Programming Excellence Award',
           period: 'Jun 2026',
           detail: 'Awarded for distinguished work on the back-end programming assessment.',
         },
@@ -267,7 +271,7 @@ export const content = {
     },
 
     contact: {
-      kicker: '06 — Contact',
+      kicker: '06 · Contact',
       title: 'Let’s talk',
       body: 'Open to backend and full-stack roles. If you have a question about anything above, or a role you think fits, email is the fastest way to reach me.',
       cta: 'Send an email',
@@ -293,7 +297,7 @@ export const content = {
    * ================================================================= */
   ja: {
     meta: {
-      title: '阿部アキオ — ソフトウェアエンジニア',
+      title: '阿部アキオ | ソフトウェアエンジニア',
       description:
         'バックエンド・フルスタック開発を専門とするソフトウェアエンジニア。Java、Spring Boot、REST API、クラウド基盤。九州在住。',
     },
@@ -332,7 +336,7 @@ export const content = {
     ],
 
     about: {
-      kicker: '01 — 概要',
+      kicker: '01 · 概要',
       title: 'バックエンド開発を軸とするソフトウェアエンジニアです。',
       paragraphs: [
         'Java および Spring Boot によるサービス開発、REST API の設計・実装、データベース設計、クラウド基盤の構築を主に担当してまいりました。CGI Inc. ではコンサルタントとして業務系システムのフルスタック開発に、Accenture Federal Services では米国連邦政府機関向けエンタープライズアプリケーションの開発に従事いたしました。',
@@ -350,7 +354,7 @@ export const content = {
     },
 
     skills: {
-      kicker: '02 — 技術',
+      kicker: '02 · 技術',
       title: '使用技術',
       note: 'レイヤー別に整理しております。いずれも実務または個人開発で使用した経験のあるものです。',
       groups: [
@@ -411,14 +415,14 @@ export const content = {
     },
 
     experience: {
-      kicker: '03 — 職務経歴',
+      kicker: '03 · 職務経歴',
       title: 'これまでの業務',
       current: '現在',
       roles: [
         {
           company: 'Accenture Federal Services',
           role: 'ソフトウェアエンジニア／シニアアナリスト',
-          period: '2023年10月 — 2024年8月',
+          period: '2023年10月〜2024年8月',
           location: '米国テキサス州サンアントニオ',
           current: false,
           summary:
@@ -434,7 +438,7 @@ export const content = {
         {
           company: 'CGI Inc.',
           role: 'コンサルタント／ソフトウェア開発者',
-          period: '2022年3月 — 2023年10月',
+          period: '2022年3月〜2023年10月',
           location: '米国テキサス州ベルトン',
           current: false,
           summary:
@@ -450,7 +454,7 @@ export const content = {
         {
           company: 'United States Army（米国陸軍）',
           role: '歩兵',
-          period: '2015年8月 — 2018年4月',
+          period: '2015年8月〜2018年4月',
           location: '米国ニューヨーク州フォートドラム',
           current: false,
           summary: 'ソフトウェア業界へ転向する前、歩兵部隊に3年間在籍。',
@@ -464,7 +468,7 @@ export const content = {
     },
 
     projects: {
-      kicker: '04 — 制作物',
+      kicker: '04 · 制作物',
       title: '主な制作物',
       note: '業務外で開発したものです。',
       filters: { all: 'すべて', game: 'ゲーム', software: 'ソフトウェア' },
@@ -499,30 +503,30 @@ export const content = {
     },
 
     education: {
-      kicker: '05 — 学歴・資格',
+      kicker: '05 · 学歴・資格',
       title: '学歴・免許・資格',
       items: [
         {
           school: 'Western Governors University',
           award: 'ソフトウェアエンジニアリング修士課程（AIエンジニアリング専攻）',
-          period: '2026年11月 — 2027年4月 修了予定',
+          period: '2026年11月〜2027年4月 修了予定',
           detail: 'AIエンジニアリングを専攻。',
         },
         {
           school: 'Western Governors University',
           award: 'ソフトウェアエンジニアリング学部',
-          period: '2026年5月 — 2026年10月 卒業予定',
+          period: '2026年5月〜2026年10月 卒業予定',
           detail: '能力評価型（コンピテンシーベース）の学士課程。',
         },
         {
           school: '立命館アジア太平洋大学',
           award: '国際関係学部',
-          period: '2024年10月 — 2026年3月',
+          period: '2024年10月〜2026年3月',
           detail: '中途退学。',
         },
         {
           school: 'Western Governors University',
-          award: 'Excellence Award（優秀賞）— Back-End Programming',
+          award: 'Back-End Programming Excellence Award（優秀賞）',
           period: '2026年6月',
           detail: 'バックエンドプログラミング課題における優秀な成果に対して授与。',
         },
@@ -536,7 +540,7 @@ export const content = {
     },
 
     contact: {
-      kicker: '06 — 連絡先',
+      kicker: '06 · 連絡先',
       title: 'お問い合わせ',
       body: 'バックエンドおよびフルスタック開発のポジションについて、ご相談を承っております。上記の内容に関するご質問も含め、メールにてご連絡いただけますと幸いです。',
       cta: 'メールを送る',

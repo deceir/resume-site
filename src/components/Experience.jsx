@@ -15,7 +15,7 @@ export default function Experience() {
 
         {t.experience.roles.map((role) => (
           <li key={`${role.company}-${role.period}`} className="reveal relative pb-12 pl-8 last:pb-0 sm:pl-12">
-            {/* The pulsing node marks an ongoing role — driven by the data,
+            {/* The pulsing node marks an ongoing role. Driven by the data,
                 not by position, so nothing reads as "current" by accident. */}
             <span
               aria-hidden="true"

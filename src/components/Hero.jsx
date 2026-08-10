@@ -18,7 +18,7 @@ function useTypewriter(words) {
       return
     }
 
-    // Cursor state lives in closure vars, not in the setState updater —
+    // Cursor state lives in closure vars, not in the setState updater.
     // StrictMode double-invokes updaters, which would double the timers.
     let timer
     let index = 0

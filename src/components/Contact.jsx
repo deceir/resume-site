@@ -40,8 +40,8 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Only split into columns once there's more than one card —
-            otherwise the empty cell shows as a bare slab of border colour. */}
+        {/* Only split into columns once there's more than one card.
+            Otherwise the empty cell shows as a bare slab of border colour. */}
         <ul
           className={`relative mt-10 grid gap-px overflow-hidden rounded-2xl border border-line bg-line ${
             SOCIALS.length > 1 ? 'sm:grid-cols-2' : ''

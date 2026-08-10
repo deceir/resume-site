@@ -181,7 +181,7 @@
   );
 }
 
-/* Reveal-on-scroll — driven by IntersectionObserver in useReveal(). */
+/* Reveal-on-scroll, driven by IntersectionObserver in useReveal(). */
 @layer components {
   .reveal {
     opacity: 0;
