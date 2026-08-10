@@ -56,7 +56,7 @@ export const content = {
 
     stats: [
       { value: '3+', label: 'Years engineering' },
-      { value: '6', label: 'Languages I ship in' },
+      { value: '7', label: 'Languages I ship in' },
       { value: '2', label: 'Enterprise consultancies' },
       { value: 'N3', label: 'JLPT certified' },
     ],
@@ -68,11 +68,13 @@ export const content = {
         'I write backend software: Spring Boot services, REST APIs, and the database and cloud infrastructure they sit on. Three years of it — first as a consultant at CGI building full-stack systems for business operations, then at Accenture Federal Services on enterprise applications for U.S. federal government customers.',
         'Before software I served three years as an infantryman in the U.S. Army. It taught me to be accountable for work other people depend on, and to keep a level head when a deadline does not move.',
         'I am now based in Kyushu, finishing a B.S. in Software Engineering at Western Governors University and continuing into an M.S. with an AI engineering focus. I passed JLPT N3 in December 2025 and am still working on my Japanese.',
+        'Alongside that I am building practical experience with AI coding agents — learning where they genuinely speed up delivery and where they don’t — and working them into my day-to-day process.',
       ],
       facts: [
         { k: 'Based in', v: 'Kyushu, Japan' },
         { k: 'Focus', v: 'Backend · REST APIs · Full-stack' },
         { k: 'Languages', v: 'English (native) · Japanese (JLPT N3)' },
+        { k: 'Building', v: 'Diplomatia — diplomatia.net' },
         { k: 'Currently', v: 'B.S. Software Engineering, WGU' },
       ],
     },
@@ -85,7 +87,7 @@ export const content = {
         {
           name: 'Languages',
           accent: 'violet',
-          items: ['Java', 'TypeScript', 'JavaScript', 'SQL', 'Python', 'C#'],
+          items: ['Java', 'Go', 'TypeScript', 'JavaScript', 'SQL', 'Python', 'C#'],
         },
         {
           name: 'Backend',
@@ -132,6 +134,7 @@ export const content = {
             'Database design',
             'Unit testing',
             'Code review',
+            'AI coding agents',
           ],
         },
       ],
@@ -199,6 +202,18 @@ export const content = {
       viewLabel: 'View project',
       empty: 'Nothing here yet.',
       items: [
+        {
+          id: 'diplomatia',
+          kind: 'game',
+          title: 'Diplomatia',
+          year: '2026',
+          status: 'Live — in active development',
+          blurb:
+            'A persistent geopolitical strategy game in the browser. Players found a nation, develop provinces, run trade convoys that take real time to arrive, and negotiate alliances — or raid and go to war once their new-player protection lapses.',
+          tags: ['Go', 'React', 'MySQL', 'Game systems'],
+          role: 'Solo developer',
+          href: 'https://diplomatia.net',
+        },
         {
           id: 'etheirys',
           kind: 'software',
@@ -311,7 +326,7 @@ export const content = {
 
     stats: [
       { value: '3年+', label: '実務経験' },
-      { value: '6', label: '実務で使用した言語' },
+      { value: '7', label: '使用言語' },
       { value: '2社', label: '大手コンサルティング' },
       { value: 'N3', label: '日本語能力試験' },
     ],
@@ -323,11 +338,13 @@ export const content = {
         'Java および Spring Boot によるサービス開発、REST API の設計・実装、データベース設計、クラウド基盤の構築を主に担当してまいりました。CGI Inc. ではコンサルタントとして業務系システムのフルスタック開発に、Accenture Federal Services では米国連邦政府機関向けエンタープライズアプリケーションの開発に従事いたしました。',
         'ソフトウェア業界に入る前は、米国陸軍に歩兵として3年間在籍しておりました。厳格な期限と高い責任が求められる環境において、チームでの業務遂行と課題解決の基礎を身につけております。',
         '現在は九州を拠点とし、Western Governors University のソフトウェアエンジニアリング学士課程を修了予定です。その後、同大学院修士課程（AIエンジニアリング専攻）へ進学いたします。2025年12月に日本語能力試験N3に合格し、現在も学習を継続しております。',
+        'あわせて、AIコーディングエージェントの実践的な活用にも取り組んでおります。開発速度の向上に有効な場面とそうでない場面を見極めながら、日々の開発プロセスに取り入れております。',
       ],
       facts: [
         { k: '居住地', v: '日本・九州' },
         { k: '専門領域', v: 'バックエンド・REST API・フルスタック' },
         { k: '語学', v: '英語（母語）・日本語（JLPT N3）' },
+        { k: '開発中', v: 'Diplomatia（diplomatia.net）' },
         { k: '現在', v: 'ソフトウェアエンジニアリング学士課程 在学中' },
       ],
     },
@@ -340,7 +357,7 @@ export const content = {
         {
           name: '言語',
           accent: 'violet',
-          items: ['Java', 'TypeScript', 'JavaScript', 'SQL', 'Python', 'C#'],
+          items: ['Java', 'Go', 'TypeScript', 'JavaScript', 'SQL', 'Python', 'C#'],
         },
         {
           name: 'バックエンド',
@@ -387,6 +404,7 @@ export const content = {
             'データベース設計',
             '単体テスト',
             'コードレビュー',
+            'AIコーディングエージェント活用',
           ],
         },
       ],
@@ -453,6 +471,18 @@ export const content = {
       viewLabel: '詳しく見る',
       empty: '該当する項目がありません。',
       items: [
+        {
+          id: 'diplomatia',
+          kind: 'game',
+          title: 'Diplomatia',
+          year: '2026年',
+          status: '公開中・開発継続中',
+          blurb:
+            'ブラウザ上で動作する永続型の地政学ストラテジーゲームです。プレイヤーは国家を建国し、州を開発し、到着までに実時間を要する交易を行い、同盟を結びます。初期保護期間の終了後は、侵攻や戦争を仕掛けることも可能です。',
+          tags: ['Go', 'React', 'MySQL', 'ゲームシステム'],
+          role: '個人開発',
+          href: 'https://diplomatia.net',
+        },
         {
           id: 'etheirys',
           kind: 'software',
